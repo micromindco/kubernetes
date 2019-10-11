@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh '''yum install docker -y 
 service docker start'''
+        node(label: 'Nodeone')
       }
     }
     stage('S2') {
